@@ -149,7 +149,7 @@ extern "C" void Start(int iChannels, int iSamplesPerSec, int iBitsPerSample, con
 {}
 
 
-extern "C" void ADDON_Stop()
+extern "C" void Stop()
 {
   if(g_plugin)
   {
@@ -274,7 +274,6 @@ extern "C" bool IsLocked()
 //-----------------------------------------------------------------------------
 extern "C" void ADDON_Destroy()
 {
-  ADDON_Stop();
 }
 
 //-- HasSettings --------------------------------------------------------------
